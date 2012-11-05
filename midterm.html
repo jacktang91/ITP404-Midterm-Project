@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Midterm</title>
+	<link rel="stylesheet" href="styles.css" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<div id="main">
+		<h1>Linkin Park Tour</h1>
+		<div id="map"></div>
+		<div id="feed"></div>More info:
+		<ol><div id="concertList"></div>
+		<script type="text/x-handlebars-template" id="page-template">
+					<li><p><strong>Location:</strong>{{city_name}}, {{country_name}}</p>
+					<strong>link: </strong> <a href="{{url}}">{{url}}</a><br/>
+					<strong>date: </strong> {{start_time}} <br/>
+					<strong>venue: </strong> {{venue_name}}<br/>
+					</li>
+
+
+		</script></ol>
+	</div>
+
+	<script src="handlebars-1.0.rc.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
